@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    <!-- <script>
+            $( "#accordion" ).accordion({
+          collapsible: true
+        });
+    
+    </script>   
+     -->
+    
+    <style>
+            body {
+                font-family: 'Galada';font-size: 22px;
+            }
+     </style>       
+</head>
+
+<body>
+
+
+      <div class="bg-image"></div>
+
+      <div class="bg-text">
+                  <div class="jumbotron text-center">
+                    <img src="image/PromoRSMAP1_2.jpg">
+                             
+                             
+                  </div>        
+            
+                  
+                  <!-- <div class="slideshow-container">
+
+                              <div class="mySlides fade">
+                                    <div class="numbertext">1 / 3</div>
+                                    <img src="image/PromoRSMAP1_1.jpg" style="width:100%">
+                                    <div class="text">Caption Text</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                    <div class="numbertext">2 / 3</div>
+                                    <img src="image/PromoRSMAP1_2.jpg" style="width:100%">
+                                    <div class="text">Caption Two</div>
+                              </div>
+                              
+                              <div class="mySlides fade">
+                                    <div class="numbertext">3 / 3</div>
+                                    <img src="image/PromoRSMAP1_3.jpg" style="width:100%">
+                                    <div class="text">Caption Three</div>
+                              </div>
+                              
+                              </div>
+                              <br>
+                              
+                              <div style="text-align:center">
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                                    <span class="dot"></span> 
+                              </div>
+                        
+                        
+                        
+                  <script>
+                              var slideIndex = 0;
+                              showSlides();
+                              
+                              function showSlides() {
+                                    var i;
+                                    var slides = document.getElementsByClassName("mySlides");
+                                    var dots = document.getElementsByClassName("dot");
+                                    for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                    }
+                                    slideIndex++;
+                                    if (slideIndex > slides.length) {slideIndex = 1}    
+                                    for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                    }
+                                    slides[slideIndex-1].style.display = "block";  
+                                    dots[slideIndex-1].className += " active";
+                                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                              }
+                  </script>          
+            
+      </div>  -->
+
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="About.html">About</a>
+              <a href="Projets.html">Projets</a>
+              <a href="Clients.html">Clients</a>
+              
+            </div>
+          
+          </div>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span onclick="openNav()">open</span> 
+
+          <h2>MY PORTFOLIO</h2>
+          <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+          <p>In this example, the navigation menu will slide in, from left to right:</p>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+          
+      <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+      </script>    
+
+
+<div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="About.html">1</a>
+    <a href="Projets.html">2</a>
+    <a href="Clients.html">3</a>
+   
+    <a href="#">&raquo;</a>
+  </div> 
+      
+
+      
+
+      
+      
+      
+
+ 
+ 
+ <!-- The sidebar -->
+ <!-- <div class="sidebar">
+   <a href="#home"><i class="fa fa-fw fa-home"></i> RSMA</a>
+   <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+   <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+   <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+ </div>  -->
+      <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+      <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+      
+      
+      <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>je me présente , je suis ROOPINIA Haamoearii et j'ai 19 ans.Je suis originaire de Polynésie Française de Tahiti plus précisément.Aujourd'hui je suis une formation pour le métier de developpeuse web.<br>
+            Mais cette formation permet de voir quels sont les métiers qui peuvent se faire dans le domaine numérique,
+            notamment comme webdesigner, gestionnaire de réseau,game designer,et bien d'autre encore.<br>
+            Cette formation permet aussi de voir ton niveau dans le numérique et ainsi pouvoir de developper.<br>
+            </p>
+      </div>
+      
+      <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Issue d'un baccalauréat général Scientifique, cela ne m'empèche pas de suivre cette formation.<br>
+            Effectivement,la plupart des stagiaires ne possèdent pas automatiquement un baccalauréat professionel spécialisé dans l'informatique.<br>
+            Cette information est ouvert à tous quelque soit le niveau.<br>
+            Il est seulement demander du travail et de la volonté<br>
+            Cette dernière permet de créer des sites webs et de les mettres en ligne<br>
+            A la fin de la formation , on obtiens un diplôme bac+2</p>
+      </div>
+      
+      
+      <script>
+            function openPage(pageName,elmnt,color) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+      </div> -->
+
+
+
+      
+     
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+<!-- <button class="accordion">PRESENTATION</button>
+<div class="panel">
+  <p>je me présente , je suis ROOPINIA Haamoearii et j'ai 19 ans.Je suis originaire de Polynésie Française de Tahiti plus précisément.Aujourd'hui je suis une formation pour le métier de developpeuse web.<br>
+Mais cette formation permet de voir quels sont les métiers qui peuvent se faire dans le domaine numérique,
+notamment comme webdesigner, gestionnaire de réseau,game designer,et bien d'autre encore.<br>
+Cette formation permet aussi de voir ton niveau dans le numérique et ainsi pouvoir de developper.<br>
+</p>
+</div>
+
+<button class="accordion">INFORMATIONS</button>
+<div class="panel">
+  <p>Issue d'un baccalauréat général Scientifique, cela ne m'empèche pas de suivre cette formation.<br>
+Effectivement,la plupart des stagiaires ne possèdent pas automatiquement un baccalauréat professionel spécialisé dans l'informatique.<br>
+Cette information est ouvert à tous quelque soit le niveau.<br>
+Il est seulement demander du travail et de la volonté.Cette dernière permet de créer des sites webs et de les mettres en ligne<br>
+A la fin de la formation , on obtiens un diplôme bac+2</p>
+</div>
+
+<button class="accordion">COMPETENCES</button>
+<div class="panel">
+  <p>Niveau compétence j'ai les bases en informatique.Et avec celle-ci j'approfondie de plus en plus mes connaissances.<br>
+</p>
+</div>
+
+
+<script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+       -->
+
+     
+
+      
+
+      
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div id="mon_ab">
+                 
+            <div class="container">
+                  
+                  <br> 
+                  <h1>PRESENTATION</h1>
+                  <div class="row">
+                     <p>Bonjour, alors je me présente ROOPINIA Haamoearii<br>J'ai 19 ans et je suis une formation pour devenir une developpeuse web</br></p>
+                      
+                  <div class="col-md-12"></div>
+                         
+                  </div>
+                  </br>
+
+                  <br>
+                  <h2>INFORMATIONS</h2>
+                  <div class="row">
+                         <img src="image/pomme2.jpeg"> -->
+                        <!-- <img src="image/rosebleu.jpeg"> -->
+                  <!-- <div class="col-md-12"></div>
+          
+                  </div>
+                  </br>
+                  
+                  <br>
+                  <h3>COMPETENCES</h3>
+                  <div class="row">
+                        <img src="image/pomme2.jpeg"> -->
+                        <!-- <img src="image/foret.jpeg">
+                  <div class="col-md-12"></div>
+                  </br>
+                   -->
+                  
+            <!-- </div> --> 
+
+
+            
+      
+
+      
+      
+                  
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>    
+</html>
